@@ -1,0 +1,24 @@
+Q. whate is feature of HtML?
+ans- html is hypertext markup language.
+this is a programimg language.
+this is basic programing language.
+html use tags and elements.
+html is open in web .
+
+
+
+MIME---  multipurpouise internet mail extention.
+
+this is use in ascii
+use in img. vidio, audio etc.
+mail and ftp use.
+
+
+
+
+html--  hypertext markup languge
+
+
+5q- what are voidelements empty in html?
+
+viod element use in html languge coding.
