@@ -1,0 +1,147 @@
+Test2
+1.Wha is css ? what are the diffrent type of selectors in css?
+CSS stands for Cascading style sheets. It describes to the user how to display HTML elements on the screen in a proper format. CSS is the language that is used to style HTML documents. In simple words, cascading style sheets are a language used to simplify the process of making a webpage.
+
+CSS is used to handle some parts of the webpage. With the help of CSS, we can control the colour of text and style of fonts, and we can control the spacing between the paragraph and many more things. CSS is easy to understand but provides strong control on the Html documents.CSS is combined with HTML.
+CSS Selectors:
+Styles Reusability
+Types of Selectors:
+1. Tag/Type Selectors
+2. ID Selectors
+3. Class Selectors
+4. Grouping Selectors
+5. Customized Selectors etc...............
+Type/Tag selectors:
+A type selector matches the name of a document language element type. A type
+selector matches every instance of the element type in the document tree.
+Syntax:
+div
+{
+Styles
+Styles
+Styles
+}
+EX:
+<html>
+<head>
+<style type="text/css">
+body
+{
+background-color:#FF00FF;
+}
+</style>
+</head>
+<body>
+<h1>My CSS web page!</h1>
+<p>Hello world!</p>
+</body>
+</html>
+2. What is css box modele?
+
+CSS Box Model:
+
+The CSS box model is a fundamental concept that defines how the element's
+dimensions and spacing are calculated.
+The box model treats every HTML element as a rectangular box consisting of
+content, padding, border, and margin.
+The box model defines the layout of an HTML element in the following way:
+
+The components of the box model are:
+• content: actual text or image that is displayed in the element
+• padding: transparent space between the content and the border of an
+element
+• border: line that surrounds the padding and content within the element
+• margin: transparent area added outside the border
+The primary purpose of the box model is to explain how the dimensions and
+spacing of elements are calculated and how they relate to each other.
+
+3. creat a student registretion form(form include inpute  fields for firstname, lastname,middilename,courseselection(use dropdown list),gender selection(use radio button),also add submit and reset button)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <label for="middlename">Middle Name:</label>
+    <input type="text" id="middlename" name="middlename"><br><br>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required><br><br>
+
+    <label for="course">Course Selection:</label>
+    <select id="course" name="course">
+        <option value="computer_science">Computer Science</option>
+        <option value="engineering">Engineering</option>
+        <option value="business">Business</option>
+        <option value="medicine">Medicine</option>
+    </select><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
+
+
+
+4. define the list types in html.
+
+Lists in html:
+In html, we are having three types of lists.
+1. Ordered list
+2. Unordered list
+3. Definition list
+
+Ordered list:
+It is also called as numbered list. It is
+used to give numbering to the list items. It
+is a paired tag.
+Syntax: <ol>--------------</ol>
+To specify the list items we use li tag. It
+is also a paired tag.
+Syntax: <li>--------------</li>
+Attibutes Parameters
+type i, I, a, A, 1
+start any number
+
+Unordered list:
+It is also called as bulleted list. It is
+used to give bullets to the list items. It
+is a paired tag.
+Syntax: <ul>-------------</ul>
+To specify the list items we use li tag. It
+is also a paired tag.
+Syntax: <li>-------------</li>
+
+Attributes Parameters
+type disc, circle, square
+
+Definition list:
+It is also called as discriptive list. It is
+used to give definitions to definition
+terms. It is a paired tag.
+Syntax: <dl>--------------</dl>
+To specify definition term, we use dt tag.It
+is a paired tag
+Syntax: <dt>--------------</dt>
+To specify definition data, we use dd tag.
+It is a paired tag
+Syntax: <dd>--------------</dd>
+
+
