@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox NAVIGATION BAR USING FLEXBOX</title>
+	<style>
+		.Container{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content:space-between;
+			align-items:center;
+			align-content: space-around;
+			height: 500px;
+			border: 12px solid black;
+		}
+
+		.div{
+			flex-grow: 1;
+			flex-shrink: 1;
+			flex-basis: 100px;
+			order: 2;
+			align-self: flex-start;
+			background: lightcoral;
+			padding: 20px;
+			margin: 10px;
+			color: aliceblue;
+			font-size: 1.5em;
+		}
+		footer{
+			background-color: aqua;
+			color: black;
+			text-align: center;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="Container">
+	  <div class="div1">Home</div>
+	  <div class="div1">About</div>
+	  <div class="div1">Address</div>
+	  <div class="div1">Contact</div>
+    </div>
+	<footer>Our Website</footer>
+</body>
+</html>

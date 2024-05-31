@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3.DESIGN A RESPONSIVE WEBPAGE USING MEDIA QUERIES TO
+		OPTIMIZE THE LAYOUT AND STYLING FOR DIFFERENT SCREEN
+		SIZES. YOUR WEBPAGE SHOULD INCLUDE THE FOLLOWING
+		COMPONENTS:HEADER,NAVIGATION MENU,CONTENT SECTION
+		&FOOTER.</title>
+		<style>
+			body{
+				font-family: 'Courier New', Courier, monospace;
+				font-size: 15px;
+				margin: 0;
+				padding: 10;
+			}
+			nav ul{
+				background-color: aquamarine;
+				color: black;
+				padding: 20px;
+			}
+			nav ul li{
+				display: inline;
+				margin-right: 10px;
+			}
+			nav ul li a{
+				color: black;
+				text-decoration: dotted;
+			}
+			section{
+				padding: 20px;
+			}
+			footer{
+				background-color: aquamarine;
+				color: black;
+				text-align: center;
+				padding: 10px;
+			}
+			@media screen and (max-width:600px) {
+				body{
+					font-size: 15px;
+				}
+			}
+			@media screen and (min-width:601px)and (max-width:900px) {
+				body{
+					font-size: 17px;
+				}
+			}
+			@media screen and (min-width:900px) {
+				body{
+					font-size: 19px;
+				}
+			}
+			header{
+				background-color: aqua;
+				color: black;
+				padding: 20px;
+			}
+		</style>
+</head>
+<body>
+	<header>
+		<h1>midia quaries</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Address</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h2>THE LAYOUT AND STYLING FOR DIFFERENT SCREEN
+			SIZES.</h2>
+			<p>YOUR WEBPAGE SHOULD INCLUDE THE FOLLOWING
+				COMPONENTS:HEADER,NAVIGATION MENU,CONTENT SECTION
+				&FOOTER.</p>
+	</section>
+	<footer>SECTION
+		&FOOTER.</footer>
+</body>
+</html>
