@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		{ var x=50;
+			document.write(x+"<br>");
+		}
+		document.write(x);
+		// x can be use here
+		//var variabele has global scope
+	</script>
+	<script>
+		{ 
+			let y=50;
+			document.write(y+"<br>");
+		// y can use here only bcoz let keyword has block scope
+		}
+		let y=30;
+		document.write(y+"<br>");
+	  // y cannot use here
+	</script>
+	 <script>
+		{
+		  const pi=3.14;
+		  document.write(pi);
+//pi use here only
+		}
+		const pi=222;
+	   
+// pi cannot use here
+//it has block scope
+	</script>
+</body>
+</html>
