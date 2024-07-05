@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX with  API</title>
+    <style>
+        #dataContainer {
+            border: 1px solid #000;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AJAX Request  API</h1>
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="dataContainer"></div>
+
+    <script>
+        function fetchData() {
+            const xhr = new XMLHttpRequest();
+            const url = 'https://dummyjson.com/products/1'; 
+
+            xhr.open('GET', url, true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    displayData(response);
+                }
+            };
+
+            xhr.send();
+        }
+
+        function displayData(data) {
+            const container = document.getElementById('dataContainer');
+            container.innerHTML = `
+                <h2>${data.title}</h2>
+                <p><strong>Brand:</strong> ${data.brand}</p>
+                <p><strong>Price:</strong> $${data.price}</p>
+                <p><strong>Description:</strong> ${data.description}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
